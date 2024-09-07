@@ -8,7 +8,7 @@ export const AssignEvaluation = ({id}) => {
   const [assignment,setAssignment]=useState()
   const [subAssign,setSubAssign]=useState()
   const [subAssignId,setSubAssignId]=useState()
-  const preurl='http://localhost:8000/api/a1'
+  const preurl='https://ldfinal-ananths-projects-6f9d6b58.vercel.app/api/a1'
   const getAssignmentInfo=()=>{
     const studentId=id
     axios.post(preurl+"/getAllotedAssignment",{studentId})
