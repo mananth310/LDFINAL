@@ -8,7 +8,7 @@ export const Educator = () => {
   const [doj,setDoj]=useState("");
   const [cno,setCno]=useState("");
   const [faculty,setFaculty]=useState([]);
-  const preurl='http://localhost:8000/api/a1'
+  const preurl='https://ldfinal-ananths-projects-6f9d6b58.vercel.app/api/a1'
   const handleSubmit=(e)=>{
     e.preventDefault()
     axios.post(preurl+'/addNewUser',
