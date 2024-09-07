@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import DataTable from 'react-data-table-component';
 import Accordion from './Accordion';
-const preurl='http://localhost:8000/api/a1'
+const preurl='https://ldfinal-ananths-projects-6f9d6b58.vercel.app/api/a1'
 export const Assignments = () => {
   const [batch,setBatch]=useState([])
   useEffect(()=>{
