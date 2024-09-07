@@ -1,7 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import Datatable from 'react-data-table-component'
-const preurl='http://localhost:8000/api/a1'
+const preurl='https://ldfinal-ananths-projects-6f9d6b58.vercel.app/api/a1'
 export const StudyPlan = () => {
 const [batch,setBatch]=useState([])
 const [batchStudy,setBatchStudy]=useState()
