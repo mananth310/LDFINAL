@@ -35,7 +35,7 @@ export const BatchAllotment = () => {
   const [selectedStaff,setSelectedStaff]=useState();
   const [classTime,setClassTime]=useState();
   const [batchId,setBatchId]=useState();
- const preurl='http://localhost:8000/api/a1'
+ const preurl='https://ldfinal-ananths-projects-6f9d6b58.vercel.app/api/a1'
 
   const createBatch=()=>{
     axios.post(preurl+"/addNewBatch",      
