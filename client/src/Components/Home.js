@@ -32,7 +32,7 @@ export const Home = () => {
     const handleSubmit=(e)=>{
         
         e.preventDefault()
-            axios.post(`http://localhost:8000/api/a1/student`,
+            axios.post(`https://ldfinal-ananths-projects-6f9d6b58.vercel.app/api/a1/student`,
                 {name,email,cno,dob,course})
             .then(result=>{console.log(result);login()})          
             .catch(err=>console.log(err))
@@ -41,7 +41,7 @@ export const Home = () => {
     const handleSubmitAdminLogin=(e)=>{
         e.preventDefault()
             
-            axios.post(`http://localhost:8000/api/a1/adminLogin`,
+            axios.post(`https://ldfinal-ananths-projects-6f9d6b58.vercel.app/api/a1/adminLogin`,
                 {username,pass})
             .then(result=>{
                 localStorage.clear();
@@ -68,7 +68,7 @@ export const Home = () => {
     }
     const handleSubmitLogin=(e)=>{
         e.preventDefault()
-            axios.post(`http://localhost:8000/api/a1/login`,
+            axios.post(`https://ldfinal-ananths-projects-6f9d6b58.vercel.app/api/a1/login`,
                 {email,cno})
             .then(result=>{
                 localStorage.clear();
