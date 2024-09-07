@@ -13,7 +13,7 @@ const study=require("./router/studyRouter");
 const assignment=require('./router/AssignmentRouter')
 connectDatabase();
 app.use(cors({
-    original:["https://ldfinal-frontend.vercel.app/"],
+    original:["https://ldfinal-frontend.vercel.app"],
     methods:["POST","GET"],
     credentials:true
 }));
