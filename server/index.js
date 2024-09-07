@@ -12,8 +12,12 @@ const batch=require("./router/batchRouter");
 const study=require("./router/studyRouter");
 const assignment=require('./router/AssignmentRouter')
 connectDatabase();
+app.use(cors({
+    original:["https://ldfinal-ananths-projects-6f9d6b58.vercel.app/"],
+    methods:["POST","GET"],
+    credentials:true
+}));
 app.use(express.json());
-app.use(cors());
 app.use('/api/a1/',student);
 app.use('/api/a1/',user);
 app.use('/api/a1/',course);
