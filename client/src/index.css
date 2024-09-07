@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Charm:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  @apply font-Merienda ;
+}
+.menu{
+  @apply text-sm font-bold hover:text-yellow-300 hover:underline hover:text-lg
+}
+.btn-prim{
+  @apply  font-bold rounded-sm bg-[#2a80d6] text-white px-3 py-1 items-center hover:border-gray-50 hover:border-spacing-1
+}
+.btn-success{
+  @apply  font-bold rounded-sm bg-[green] text-white px-3 py-1 items-center
+}
+.heroSec{
+  background-color:rgba(0, 0, 0, .5) ;
+}
+.boxShadow{
+  box-shadow: 00px 00px 15px 10px pink;
+}
+
+.inputForm{
+  @apply block w-full rounded-md border-0 py-1.5 pl-2 pr-20 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 mb-2
+}
+thead{
+  @apply bg-sky-300;
+}
+th,td{
+  @apply py-3 px-2 text-sm text-left border border-gray-400;
+}

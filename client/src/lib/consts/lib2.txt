@@ -1,0 +1,93 @@
+
+import { MdDashboard , MdCallSplit, MdAssignmentAdd, MdQuiz } from "react-icons/md";
+import { FaUserGraduate, FaDiscourse, FaChalkboardTeacher, FaPaperPlane } from "react-icons/fa";
+export const ADMIN_NAVIGATION =[
+    {
+        key:"dashboard",
+        lable:"Dashboard",
+        path:"/Navbar",
+        icon: <MdDashboard />
+    },
+    {
+        key:"course",
+        lable:"Course",
+        path:"/Navbar/Course",
+        icon: <FaDiscourse  />
+    },
+    {
+        key:"faculty",
+        lable:"Educator",
+        path:"/Navbar/Educator",
+        icon: <FaChalkboardTeacher  />
+    },
+    {
+        key:"student",
+        lable:"Student List",
+        path:"/Navbar/Students",
+        icon: <FaUserGraduate />
+    },
+    {
+        key:"batch",
+        lable:"Batch Allotment",
+        path:"/Navbar/BatchAllotment",
+        icon: <MdCallSplit />
+    }
+]
+
+export const EDUCATOR_NAVIGATION=[
+    {
+        key:"dashboard",
+        lable:"Dashboard",
+        path:"/Navbar/Navbar",
+        icon: <MdDashboard />
+    },
+    {
+        key:"student",
+        lable:"Student List",
+        path:"/Navbar/Students",
+        icon: <FaUserGraduate />
+    },
+    {
+        key:"studyplan",
+        lable:"Study Plan",
+        path:"/Navbar/StudyPlan",
+        icon: <FaPaperPlane />
+    },
+    {
+        key:"assignment",
+        lable:"Assignment",
+        path:"/Navbar/Assignment",
+        icon: <MdAssignmentAdd />
+    },
+    {
+        key:"quiz",
+        lable:"Quiz",
+        path:"/Navbar/Quiz",
+        icon: <MdQuiz />
+    }
+]
+export const STUDENT_NAVIGATION=[
+    {
+        key:"dashboard",
+        lable:"Dashboard",
+        path:"/Navbar/Navbar",
+        icon: <MdDashboard />
+    },{
+        key:"studyplan",
+        lable:"Study Plan",
+        path:"/Navbar/StudyPlan",
+        icon: <FaPaperPlane />
+    },
+    {
+        key:"assignment",
+        lable:"Assignment",
+        path:"/Navbar/Assignment",
+        icon: <MdAssignmentAdd />
+    },
+    {
+        key:"quiz",
+        lable:"Quiz",
+        path:"/Navbar/Quiz",
+        icon: <MdQuiz />
+    }
+]
