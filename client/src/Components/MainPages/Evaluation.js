@@ -8,7 +8,7 @@ export const Evaluation = () => {
   const [studentData,setStudentData]=useState()
   const [studentDataArr,setStudentDataArr]=useState([])
   const [studentRow,setStudentRow]=useState()
-  const preurl='http://localhost:8000/api/a1'
+  const preurl='https://ldfinal-ananths-projects-6f9d6b58.vercel.app/api/a1'
   const getStudent=(elem)=>{
     axios.post(preurl+"/getStudentsforAssignment",{elem})
     .then((res)=>{setStudentData(res.data)
