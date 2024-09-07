@@ -6,7 +6,7 @@ export const Course = () => {
   const [courseName, setCourseName]=useState("");
   const [courseDisc, setCourseDisc]=useState("");
   const [courseData,setCourseData]=useState([]);
-  const preurl='http://localhost:8000/api/a1'
+  const preurl='https://ldfinal-ananths-projects-6f9d6b58.vercel.app/api/a1'
   const handleSubmit=(e)=>{
     e.preventDefault()
     axios.post(preurl+'/newCourse',
